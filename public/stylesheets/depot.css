@@ -1,27 +1,122 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
-<title>502 - Web server received an invalid response while acting as a gateway or proxy server.</title>
-<style type="text/css">
-<!--
-body{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}
-fieldset{padding:0 15px 10px 15px;} 
-h1{font-size:2.4em;margin:0;color:#000;}
-h2{font-size:1.7em;margin:0;color:#CC0000;} 
-h3{font-size:1.2em;margin:10px 0 0 0;color:#000000;} 
-#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:"trebuchet MS", Verdana, sans-serif;color:#FFF;
-background-color:#555555;}
-#content{margin:0 0 0 2%;position:relative;}
-.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;}
-.list_line_odd{background-color:#ff8899}
-.list_line_even{background-color:#9988ff}
-#pic img {width:250px;height:300px}
+/* Global styles */
+
+#store #notice {
+        color: #000;
+        border: 2px solid red;
+        padding: 1em;
+        margin-bottom: 2em;
+        background-color: #f0f0f0;
+        font: bold smaller sans-serif;
+}
+
+
+#store h1 {
+        font:  150% sans-serif;
+        color: #226;
+        border-bottom: 3px dotted #77d;
+}
+
+/* Styles for products/index */
+
+#product_list table {
+        border-collapse: collapse;
+}
+
+#product_list table tr td {
+        padding: 5px;
+        vertical-align: top;
+}
+
+#product_list .list_image {
+  width:        60px;
+  height:       70px;
+}
+
+#product_list .list_description {
+  width:        60%;
+}
+
+#product_list .list_description dl {
+        margin: 0;
+}
+
+#product_list .list_description dt {
+	color:        #244;
+	font-weight:  bold;
+	font-size:    larger;
+}
+
+#product_list .list_description dd {
+        margin: 0;
+}
+
+#product_list .list_actions {
+  font-size:    x-small;
+  text-align:   right;
+  padding-left: 1em;
+}
+
+#product_list .list_line_even {
+  background:   #e0f8f8;
+}
+
+#product_list .list_line_odd {
+  background:   #f8b0f8;
+}
+
+/* An entry in the store catalog */
+
+#store  .entry {
+  overflow: auto;
+  margin-top: 1em;
+  border-bottom: 1px dotted #77d;
+}
+
+#store  .title {
+  font-size: 120%;
+  font-family: sans-serif;
+}
+
+#store .entry img {
+  width: 80px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  float: left;
+}
+#store .entry form,#store .entry form div{
+	display: inline;
+}
+
+#store .entry h3 {
+ margin-top: 0;
+ margin-bottom: 2px;
+ color: #227;
+}
+
+#store .entry p {
+ margin-top: 0.5em; 
+ margin-bottom: 0.8em; 
+}
+
+#store .entry .price_line {
+ clear: both;
+ margin-bottom: 0.5em;
+}
+
+#store .entry .add_to_cart {
+  position: relative;
+}
+
+#store .entry  .price {
+  color: #44a;
+  font-weight: bold;
+  margin-right: 2em;
+}
 #banner {
 	background: #9c9;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	border-bottom: 20x solid;
+	border-bottom: 20px solid;
 	font: small-caps 40px/40px "Times New Roman",serif;
 	color: #283;
 	text-align: center;
@@ -50,20 +145,3 @@ background-color:#555555;}
 	color: #bfb;
 	font-size: small;	
 }
-.entry img {
-	width: 200px;
-	height: 200px;
-}
--->
-</style>
-</head>
-<body>
-<div id="header"><h1>Server Error</h1></div>
-<div id="content">
- <div class="content-container"><fieldset>
-  <h2>502 - Web server received an invalid response while acting as a gateway or proxy server.</h2>
-  <h3>There is a problem with the page you are looking for, and it cannot be displayed. When the Web server (while acting as a gateway or proxy) contacted the upstream content server, it received an invalid response from the content server.</h3>
- </fieldset></div>
-</div>
-</body>
-</html>
