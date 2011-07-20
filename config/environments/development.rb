@@ -22,5 +22,18 @@ Depot::Application.configure do
 
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
+  Depot::Application.configure do
+    config.action_mailer.delivery_method = :smtp
+    
+    config.action_mailer.smtp_settings = {
+      :address              => "smtp.163.com",
+      :port                 => 25,
+      :domain               => "172.18.181.206:3000",
+      :authentication       => "plain",
+      :user_name            => "testedemail@163.com",
+      :password             => "asdf1234",
+      :enable_starttls_auto =>true
+    }
+  end
 end
 
