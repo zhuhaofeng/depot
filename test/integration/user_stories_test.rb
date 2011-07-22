@@ -15,7 +15,7 @@ class UserStoriesTest < ActionDispatch::IntegrationTest
     assert_template "index"
     
     xml_http_request :post,"/login", :name => dave_user.name, :password => 'secret'
-    assert_redirected_to admin_url
+    assert_redirected_to admin_path(:locale => 'en')
     
     xml_http_request :post, '/line_items', :product_id => ruby_book.id
     assert_response :success
